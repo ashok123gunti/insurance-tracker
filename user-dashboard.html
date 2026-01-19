@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User's Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Welcome, <span id="userName"></span></h2>
+
+    <h3>Your Policies</h3>
+    <ul id="policyList"></ul>
+
+    <h3>Submit a Claim request</h3>
+    <form id="claimForm">
+      <input type="text" id="claimTitle" placeholder="Claim Title" required><br>
+      <textarea id="claimDescription" placeholder="Description" required></textarea><br>
+      <button type="submit">Submit Claim</button>
+    </form>
+
+    <h3>Your Claims</h3>
+    <ul id="claimList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
